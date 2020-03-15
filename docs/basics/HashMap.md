@@ -12,5 +12,7 @@
  因为HashMap的key和value都可以为null，在往里面put(添加)元素的时候会根据key用hash方法去计算一个index(插入的位置)值。
  简单看一下HashMap中put和hash方法的源码。
  
- ![](https://github.com/ckcxq123/Java-/blob/master/docs/image/1584269025.png)
+![](https://github.com/ckcxq123/Java-/blob/master/docs/image/1584269025.png)
+
+![](https://github.com/ckcxq123/Java-/blob/master/docs/image/1584270518(1).jpg)
  
