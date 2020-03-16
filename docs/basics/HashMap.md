@@ -16,7 +16,7 @@
 
 ![](https://github.com/ckcxq123/Java-/blob/master/docs/image/1584270518(1).jpg)
  
- 看过Guide哥对HashMap的介绍，在JDK1.8之前数组是主体，链表则是主要为了解决哈希冲突而存在的。哈希冲突又是怎么样产生的呢？
+ 看过[Guide哥](https://juejin.im/post/5ab0568b5188255580020e56#heading-4)对HashMap的介绍，在JDK1.8之前数组是主体，链表则是主要为了解决哈希冲突而存在的。哈希冲突又是怎么样产生的呢？
  例如现在要向一个HashMap对象中put（”泉儿“，250），当插入了为”泉儿“的元素为key时，通过hash方法计算出插入的位置，计算出来index是1那结果如下。
  
 ![](https://github.com/ckcxq123/Java-/blob/master/docs/image/hashmap1.png)
