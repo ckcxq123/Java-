@@ -5,7 +5,7 @@
 * **HashMap的底层实现原理**
  
  HashMap是Java中常用的数据结构，它在JDK1.8之前是由**数组**和**链表**组合构成的数据结构，也是就**链表散列**。
- 借用敖丙的图大概就是以下这样的结构。数组中每个地方都存了Key-Value这样的实例，在JDK1.8之前叫Entry在JDK1.8中叫Node。
+ 我们知道数组和链表都有其各自的优点和缺点，数组连续存储，寻址容易，插入删除操作相对困难；而链表离散存储，寻址相对困难，而插入删除操作容易；而HashMap结合了这两种数据结构，保留了各自的优点，又弥补了各自的缺点。借用[敖丙](https://github.com/AobingJava/JavaFamily/blob/master/docs/basics/HashMap.md)的图大概就是以下这样的结构。数组中每个地方都存了Key-Value这样的实例，在JDK1.8之前叫Entry在JDK1.8中叫Node。
 
  ![](https://github.com/ckcxq123/Java-/blob/master/docs/image/hashmap0.png)
  
