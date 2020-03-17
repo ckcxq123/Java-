@@ -32,6 +32,7 @@ hash（"泉儿"）= 1
  
  * **HashMap的存取原理**
  HashMap的put方法，这里看JDK1.8之后的源码进行解释，JDK1.8相比较1.7就是多了一个红黑树的判断。思路如下
+ 
  1.table[]是否为空
  
 2.判断table[i]处是否插入过值
@@ -42,7 +43,8 @@ hash（"泉儿"）= 1
 
 5.如果key不相同，就插入一个key，记录结构变化一次
 
-![]()
+![](https://github.com/ckcxq123/Java-/blob/master/docs/image/put1.png)
+![](https://github.com/ckcxq123/Java-/blob/master/docs/image/put2.png)
  
  
  
