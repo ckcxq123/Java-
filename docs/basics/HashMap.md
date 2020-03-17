@@ -31,6 +31,18 @@ hash（"泉儿"）= 1
  JDK1.8之后呢HashMap的结构就变为了**数组**加**链表**加[红黑树](https://github.com/ckcxq123/Java-/blob/master/docs/basics/RedBlackTree.md)的结构。当HashMap的链表长度大于阈值（默认为8）时，将链表转化为红黑树，以减少搜索时间，红黑树的引用将原本O(n)的时间复杂度降低到了O(logn)。红黑树的介绍就不在此展开。
  
  * **HashMap的存取原理**
+ HashMap的put方法，这里看JDK1.8之后的源码进行解释，JDK1.8相比较1.7就是多了一个红黑树的判断。思路如下
+ 1.table[]是否为空
+ 
+2.判断table[i]处是否插入过值
+
+3.判断链表长度是否大于8，如果大于就转换为红黑二叉树，并插入树中
+
+4.判断key是否和原有key相同，如果相同就覆盖原有key的value，并返回原有value
+
+5.如果key不相同，就插入一个key，记录结构变化一次
+
+![]()
  
  
  
