@@ -45,6 +45,7 @@ hash（"泉儿"）= 1
 
 ![](https://github.com/ckcxq123/Java-/blob/master/docs/image/put1.png)
 ![](https://github.com/ckcxq123/Java-/blob/master/docs/image/put2.png)
+![](https://github.com/ckcxq123/Java-/blob/master/docs/image/put3.png)
  
  
  
