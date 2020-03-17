@@ -163,6 +163,7 @@ UNTREEIFY_THRESHOLD：介绍上面的参数时，我们知道当长度过大时�
 MIN_TREEIFY_CAPACITY：链表树化的一个标准，前面说过当数组槽内的元素数量大于8时可能会转化为红黑树，之所以说是可能就是因为这个值，当数组的长度小于这个值是，会先去进行扩容，扩容之后就有很大的可能让数组槽内的数据可以更分散一些了，也就不用转化数组槽后的存储结构了。当然，长度大于这个值并且槽内数据大于8时，那就老老实实的转化为红黑树吧。
 
 * **怎么处理HashMap在线程安全的场景**
+
 在这样的场景，我们一般都会使用HashTable或者[ConcurrentHashMap](https://github.com/ckcxq123/Java-/edit/master/docs/basics/ConcurrentHashMap.md)，但是因为前者的并发度低的原因基本上没啥使用场景了，所以存在线程不安全的场景我们都使用的是[ConcurrentHashMap](https://github.com/ckcxq123/Java-/edit/master/docs/basics/ConcurrentHashMap.md)。
 
 详情了解请看[ConcurrentHashMap](https://github.com/ckcxq123/Java-/edit/master/docs/basics/ConcurrentHashMap.md)
