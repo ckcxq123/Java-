@@ -46,6 +46,18 @@ hash（"泉儿"）= 1
 ![](https://github.com/ckcxq123/Java-/blob/master/docs/image/put1.png)
 ![](https://github.com/ckcxq123/Java-/blob/master/docs/image/put2.png)
 ![](https://github.com/ckcxq123/Java-/blob/master/docs/image/put3.png)
+
+HashMap的get方法，实现思路：
+
+1.判断表或key是否是null，如果是直接返回null
+
+2.判断索引处第一个key与传入key是否相等，如果相等直接返回
+
+3.如果不相等，判断链表是否是红黑二叉树，如果是，直接从树中取值
+
+4.如果不是树，就遍历链表查找
+
+![](https://github.com/ckcxq123/Java-/blob/master/docs/image/get1.png)
  
  
  
